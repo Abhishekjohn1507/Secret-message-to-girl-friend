@@ -20,6 +20,10 @@ pip install -r requirements.txt
 python LSBSteg.py encode -i input.png -o output.png -f secret.txt
 
 ```
+##Decoding a Secret Message:
+```
+python LSBSteg.py decode -i output.png -o extracted_secret.txt
+```
 
 Here's your Python program for **Secret Message to Girlfriend** using LSB Steganography. I'll provide the full implementation, including encoding and decoding functions, and a script to run it.
 
@@ -35,8 +39,3 @@ Here's your Python program for **Secret Message to Girlfriend** using LSB Stegan
    python script.py decode output.png
    ```
    This extracts the hidden message from `output.png`.
-
-##Decoding a Secret Message:
-```
-python LSBSteg.py decode -i output.png -o extracted_secret.txt
-```
