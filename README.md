@@ -12,3 +12,16 @@ This project uses **LSB Steganography** to hide secret messages in images. Using
 First, install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+##Encoding a Secret Message:
+
+```
+python LSBSteg.py encode -i input.png -o output.png -f secret.txt
+
+```
+
+##Decoding a Secret Message:
+```
+python LSBSteg.py decode -i output.png -o extracted_secret.txt
+```
